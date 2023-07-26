@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"html/template"
 	"net/http"
-	"p_webapp02/web9_bookstore/dao"
-	"p_webapp02/web9_bookstore/model"
-	"p_webapp02/web9_bookstore/util"
+	"online_reg/dao"
+	"online_reg/model"
+	"online_reg/util"
 )
 
 // LogoutHandle 注销

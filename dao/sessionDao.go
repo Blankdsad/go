@@ -2,8 +2,8 @@ package dao
 
 import (
 	"net/http"
-	"p_webapp02/web9_bookstore/model"
-	"p_webapp02/web9_bookstore/util"
+	"online_reg/model"
+	"online_reg/util"
 )
 
 // AddSession 添加AddSession

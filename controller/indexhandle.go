@@ -3,8 +3,8 @@ package controller
 import (
 	"html/template"
 	"net/http"
-	"p_webapp02/web9_bookstore/dao"
-	"p_webapp02/web9_bookstore/model"
+	"online_reg/dao"
+	"online_reg/model"
 )
 
 // IndexHandle1 首页
@@ -35,12 +35,12 @@ func IndexHandle1(w http.ResponseWriter, r *http.Request) {
 	// 	}
 	// }
 
-	flag, sess := dao.CheckLogin(r)
-	if flag {
-		// 已经登录
-		page.IsLogin = true
-		page.UserName = sess.UserName
-	}
+	//flag, sess := dao.CheckLogin(r)
+	//if flag {
+	//	// 已经登录
+	//	page.IsLogin = true
+	//	page.UserName = sess.UserName
+	//}
 	t := template.Must(template.ParseFiles("./views/index.html"))
 	t.Execute(w, page)
 }
